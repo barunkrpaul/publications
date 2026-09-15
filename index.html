@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Publication record of Barun Kr. Paul — journal articles, conference papers and book chapters in computational geometry, clustering and machine learning.">
+<meta name="author" content="Barun Kr. Paul">
+<meta property="og:title" content="Barun Kr. Paul — Publications">
+<meta property="og:description" content="Journal articles, conference papers and book chapters.">
+<meta property="og:type" content="profile">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Barun Paul Publications</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+:root{
+  --ground:#faf9f7; --panel:#ffffff; --edge:#ded9d2; --edge-soft:#ebe7e1;
+  --ink:#1a1816; --ink-2:#474340; --ink-3:#78726c;
+  --accent:#0e6f66; --accent-soft:#dcece9; --accent-ink:#0a544d;
+  --ok:#2f6b34; --ok-soft:#dde9dd; --cool:#1f5a86; --cool-soft:#dae6f0;
+  --display:"Spectral", Georgia, serif;
+  --body:"Source Sans 3", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#12110f; --panel:#1a1917; --edge:#302d2a; --edge-soft:#262421;
+    --ink:#ece8e3; --ink-2:#b8b2ab; --ink-3:#8a837c;
+    --accent:#4fbfb1; --accent-soft:#12332f; --accent-ink:#7fd5c9;
+    --ok:#6fbf75; --ok-soft:#16291a; --cool:#68a9dd; --cool-soft:#132638;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#12110f; --panel:#1a1917; --edge:#302d2a; --edge-soft:#262421;
+  --ink:#ece8e3; --ink-2:#b8b2ab; --ink-3:#8a837c;
+  --accent:#4fbfb1; --accent-soft:#12332f; --accent-ink:#7fd5c9;
+  --ok:#6fbf75; --ok-soft:#16291a; --cool:#68a9dd; --cool-soft:#132638;
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--ground); color:var(--ink); font-family:var(--body);
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased}
+.wrap{max-width:760px; margin:0 auto; padding-inline:20px; padding-block:52px 80px}
+h1,h2{font-family:var(--display); margin:0; text-wrap:balance}
+a{color:var(--accent-ink)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+header.top{border-bottom:2px solid var(--ink); padding-bottom:22px}
+.eyebrow{font-family:var(--mono); font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent-ink); margin-bottom:10px}
+h1{font-size:clamp(38px,7.5vw,58px); font-weight:700; letter-spacing:-.028em; line-height:1.02}
+.desig{margin:14px 0 0; font-size:16.5px; font-weight:600; color:var(--ink); line-height:1.45; max-width:46ch}
+.desig .d{color:var(--ink-3); font-weight:400}
+.desig.second{margin-top:3px; font-weight:600; color:var(--ink); font-size:16px}
+.affil{color:var(--ink-3); margin-top:14px; font-size:15.5px; max-width:54ch}
+.affil em{font-style:italic; color:var(--ink-3)}
+
+.tally{display:flex; flex-wrap:wrap; gap:26px; margin-top:24px; padding-top:20px; border-top:1px solid var(--edge-soft)}
+.tally div{min-width:0}
+.tally .n{font-family:var(--display); font-size:30px; font-weight:600; line-height:1; font-variant-numeric:tabular-nums}
+.tally .k{font-size:12px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3); margin-top:6px}
+
+.sec{margin-top:46px}
+.sec h2{font-size:14px; font-family:var(--body); font-weight:700; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--ink-3); display:flex; align-items:center; gap:10px; padding-bottom:9px; border-bottom:1px solid var(--edge)}
+.sec h2 .n{font-family:var(--mono); font-size:11.5px; letter-spacing:0; color:var(--accent-ink);
+  background:var(--accent-soft); border-radius:999px; padding:2px 9px; font-weight:400}
+
+ol.entries{list-style:none; margin:0; padding:0}
+.entry{padding:22px 0; border-bottom:1px solid var(--edge-soft)}
+.entry:last-child{border-bottom:0}
+.ttl{font-family:var(--display); font-size:19px; font-weight:600; line-height:1.34; margin:0; letter-spacing:-.005em}
+.auth{margin:7px 0 0; color:var(--ink-2); font-size:14.5px}
+.meta{margin:4px 0 0; color:var(--ink-3); font-size:14.5px}
+.meta .venue{font-style:italic}
+.meta .yr{font-variant-numeric:tabular-nums}
+.sep{opacity:.5}
+.tags{margin:11px 0 0; display:flex; flex-wrap:wrap; gap:9px; align-items:center}
+.st{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:5px}
+.s-published{background:var(--ok-soft); color:var(--ok)}
+.s-accepted{background:var(--ok-soft); color:var(--ok)}
+.s-under-review{background:var(--cool-soft); color:var(--cool)}
+.s-submitted{background:var(--cool-soft); color:var(--cool)}
+.doi{font-family:var(--mono); font-size:12px; color:var(--ink-3); text-decoration:none; word-break:break-all}
+.doi:hover{color:var(--accent-ink); text-decoration:underline}
+
+footer.foot{margin-top:52px; padding-top:20px; border-top:1px solid var(--edge);
+  color:var(--ink-3); font-size:13.5px}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">Publication record</div>
+    <h1>Barun Kr. Paul</h1>
+    <p class="desig">PhD Research Scholar<span class="d">,</span> Department of Computer Science and Engineering, NITTTR Kolkata</p>
+    <p class="desig second">SACT-I<span class="d">,</span> Department of Computer Science, Srikrishna College, Bagula, Nadia, West Bengal</p>
+    <p class="affil"><em>Computational geometry for clustering, and machine learning across materials physics, astrophysics, medical imaging and Indian Knowledge Systems.</em></p>
+    <div class="tally">
+      <div><div class="n">2</div><div class="k">Published</div></div>
+      <div><div class="n">2</div><div class="k">Accepted</div></div>
+      <div><div class="n">7</div><div class="k">Under review</div></div>
+    </div>
+  </header>
+<section class="sec"><h2>Journal articles<span class="n">7</span></h2><ol class="entries"><li class="entry"><p class="ttl">Multi-Target Machine Learning and Deep Learning Framework for Predicting Structural, Energetic, and Magnetic Properties of Ternary Heusler Alloys Using Site-Resolved Descriptors</p><p class="auth">Barun Kr. Paul, Kinsuk Giri, Subarna Datta, Soumyadipta Pal</p><p class="meta"><span class="venue">Physica B: Condensed Matter (Elsevier)</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-accepted">Accepted</span><a class="doi" href="https://doi.org/10.1016/j.physb.2026.419313">doi.org/10.1016/j.physb.2026.419313</a></p></li><li class="entry"><p class="ttl">Geometry as a Unifying Language for Clustering: A Comprehensive Review and Taxonomy</p><p class="auth">Barun Kr. Paul, Kinsuk Giri</p><p class="meta"><span class="venue">Nature Reviews Computing (proposal)</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-under-review">Under review</span></p></li><li class="entry"><p class="ttl">HCL/HAL: a computational geometry-based twin approach for improving agglomerative clustering</p><p class="auth">Rohan Saha, Barun Kr. Paul, Arnab Maitra, Chandan Chakraborty, Kinsuk Giri</p><p class="meta"><span class="venue">International Journal of Data Science and Analytics (Springer)</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-published">Published</span><a class="doi" href="https://doi.org/10.1007/s41060-026-01229-z">doi.org/10.1007/s41060-026-01229-z</a></p></li><li class="entry"><p class="ttl">A Quantitative Analysis of Institutional Trading Behaviour in NIFTY 50 listed Stocks using AMD Candlestick Patterns and Machine Learning</p><p class="auth">Arnab Maitra, Kailash Chandra Mahatab, Rohan Saha, Barun Kr. Paul, Kinsuk Giri</p><p class="meta"><span class="venue">International Journal of System Assurance Engineering and Management</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-under-review">Under review</span></p></li><li class="entry"><p class="ttl">HPKM: An Improved k-means Clustering using Hyperplane</p><p class="auth">Barun Kr. Paul, Kinsuk Giri</p><p class="meta"><span class="venue">Data Mining and Knowledge Discovery (Springer)</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-under-review">Under review</span></p></li><li class="entry"><p class="ttl">CCKM (version 1)</p><p class="auth">Barun Kr. Paul, Ujjal Kumar Das, Kinsuk Giri</p><p class="meta"><span class="venue">Machine Learning (Springer)</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-under-review">Under review</span></p></li><li class="entry"><p class="ttl">Bimodal Resistive Switching in BA2PbI4-Based Synaptic Bridge Memristors for Noise-Tolerant Image Recognition</p><p class="auth">Barun Kr. Paul et al.</p><p class="meta"><span class="venue">ACS Applied Materials &amp; Interfaces</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-under-review">Under review</span></p></li></ol></section><section class="sec"><h2>Conference papers<span class="n">3</span></h2><ol class="entries"><li class="entry"><p class="ttl">Geometry-Based Approach for Improving Agglomerative Clustering using Euclidean Distance</p><p class="auth">Barun Kr. Paul, Ujjal Kumar Das, Kinsuk Giri</p><p class="meta"><span class="venue">AICTA 2026, NIT Silchar (Springer proceedings)</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-accepted">Accepted</span></p></li><li class="entry"><p class="ttl">Artificial Intelligence Tools for Education, Research, Software Development, Content Creation, and Productivity: A Comprehensive Survey</p><p class="auth">Barun Kr. Paul, Kinsuk Giri</p><p class="meta"><span class="venue">ICCE 2026, Track D</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-under-review">Under review</span></p></li><li class="entry"><p class="ttl">Lung CT Image Segmentation with Optimal Parameters Using UNET Architecture</p><p class="auth">Barun Kumar Paul, Tuhin Kumar Biswas, Kinsuk Giri</p><p class="meta"><span class="venue">IEEE international conference, 2024</span> <span class="sep">·</span> <span class="yr">2024</span></p><p class="tags"><span class="st s-published">Published</span></p></li></ol></section><section class="sec"><h2>Book chapters<span class="n">1</span></h2><ol class="entries"><li class="entry"><p class="ttl">Indian Knowledge Systems in Artificial Intelligence and Digital Technology: Opportunities, Challenges and Future Directions</p><p class="auth">Barun Kr. Paul, Kinsuk Giri</p><p class="meta"><span class="venue">Indian Knowledge Systems: Tradition, Innovation and Contemporary Relevance</span> <span class="sep">·</span> <span class="yr">2026</span></p><p class="tags"><span class="st s-submitted">Submitted</span></p></li></ol></section>
+  <footer class="foot">Current as of 12 September 2026. Work in preparation is not listed.</footer>
+</div>
+
+</body>
+</html>
